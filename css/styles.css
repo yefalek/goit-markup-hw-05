@@ -632,7 +632,10 @@ portfolio.html - css
   color: var(--white-color);
   box-shadow: var(--filter-button-shadow);
 }
-  
+
+/* *******
+  items list
+  ******** */
 h2.var{
   font-size: 18px;
   line-height: 36px;
@@ -661,14 +664,30 @@ h2.var{
   border: 1px solid var(--card-portfborder-color); 
 }
 
-.prli:focus, .prli:hover{
+.prli:focus, .prli:hover .pr-thumb p{
+  opacity: 1;
   box-shadow: var(--filter-items-shadow);
 }
 
-
-.pr-thumb img{
-  display: block;
+.pr-thumb{
+  position: relative;
   
+}
+
+.pr-thumb p{
+  position: absolute;
+  top: 0;
+  left: 0;
+  padding: 63px 24px;
+  height: 100%;
+  width: 100%;
+
+  letter-spacing: 0.03em;
+  font-size: 18px;
+  line-height: 28px;
+  background-color: rgba(33, 150, 243, 0.9);
+  color: var(--white-color);
+  opacity: 0;
 }
 
 .pr-content{
