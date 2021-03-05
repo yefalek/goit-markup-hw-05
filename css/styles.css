@@ -51,6 +51,7 @@ img {
 }
 
 .head{
+  position: relative;
   display: flex;
   justify-content: baseline;
   padding-top: 24px;
@@ -145,7 +146,21 @@ img {
 }
 
 .link-nav.current{
+  position: relative;
   color: var(--first-color);
+}
+
+.links-nav .link-nav.current::after{
+  position: absolute;
+  top: 48px;
+  bottom: 0;
+  left: 0;
+  height: 4px;
+  width: 100%;
+  content: '';
+  display: block;
+  border-radius: 2px;
+  background-color: var(--first-color);
 }
 
 .link-icon{
@@ -300,6 +315,45 @@ index.html - css
   color: var(--white-color);
 }
 
+.backdrop {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.2);
+}
+
+.backdrop.is-hidden {
+  opacity: 0;
+  pointer-events: none;
+}
+
+.modal {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  
+  min-height: 528px;
+  min-width: 581px;
+
+  border-radius: 4px;
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+  background-color: #fff;
+}
+
+.close-modal{
+  position: absolute;
+  top: 8px;
+  right: 8px;
+  padding: 10px;
+
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  border-radius: 50%;
+  box-sizing: border-box;
+}
+
 .container.index{
   display: block;
 }
@@ -369,6 +423,27 @@ index.html - css
 .doul-item{
   flex-basis: calc(100% / 3);
   margin-left: 30px; 
+}
+
+.thumb{
+  position: relative;
+}
+
+.product-actions{
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  height: 70px;
+  width: 100%;
+  background-color: rgba(47, 48, 58, 0.8);
+}
+
+.product-actions h3{
+  text-align: center;
+  padding: 27px 0;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: var(--white-color);
 }
 
 .sec-team{

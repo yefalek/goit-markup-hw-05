@@ -68,9 +68,14 @@
       <section class="hero-bg">
           <div class="servise">
             <h1 class="hero-text">Эффективные решения для вашего бизнеса</h1>
-            <a  href="#">
-            Заказать услугу
+            <a data-modal-open href="#">
+              Заказать услугу
             </a>
+            <div class="backdrop is-hidden">
+              <div class="modal" data-modal>
+                <button class="close-modal" data-modal-close>X</button>
+              </div>
+            </div>
           </div>
       </section>
       <!-- Особености-->
@@ -117,25 +122,38 @@
         <div class="whatdo">
           <h2 class="indexh">Чем мы занимаемся</h2>
             <ul class="doul">
+
             <li class="doul-item">
               <div class="thumb">
                 <img src="images/img1.jpg"   alt="close-up-image-programer-working-his-desk-office_1098-18707" />
+                <div class="product-actions">
+                  <h3>Десктопные приложения</h3>
+                </div>
               </div>
             </li>
+
             <li class="doul-item">
               <div class="thumb">
                 <img
                 src="images/img2.jpg"
                 alt="web-ui-designers-are-developing-application-smartphones-team-creators-is-working-interface-mobile-phones_8119-2713"/>
+                <div class="product-actions">
+                  <h3>Мобильные приложения</h3>
+                </div>
               </div>
           </li>
+
             <li class="doul-item">
               <div class="thumb">
                 <img
                 src="images/img3.jpg"
                 alt="creative-artist-web-design-with-working-colour-selection-graphic-tablet_35674-1119"/>
+                <div class="product-actions">
+                  <h3>Дизайнерские решения</h3>
+                </div>
               </div>
             </li>
+
           </ul>
         </div>
       </div>
@@ -449,5 +467,6 @@
         </div>
       </div>
     </footer>
+    <script src="./js/modal.js"></script>
   </body>
 </html>
