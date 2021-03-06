@@ -67,6 +67,7 @@ img {
   align-self: center;
   display: flex;
   margin: 0 auto;
+  padding: 0 15px;
 }
 
 .dnav, .links-nav, .logo {
@@ -106,7 +107,7 @@ img {
 }
 
 .links-nav.con{
-  margin-left: 360px;
+  margin-left: 330px;
 }
 
 .links-nav{
@@ -399,8 +400,9 @@ index.html - css
   position: absolute;
   top: 8px;
   right: 8px;
-  padding: 10px;
+  padding: 5px 10px;
 
+  text-align: center;
   border: 1px solid rgba(0, 0, 0, 0.1);
   border-radius: 50%;
   box-sizing: border-box;
