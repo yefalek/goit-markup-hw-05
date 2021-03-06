@@ -149,6 +149,19 @@ img {
   
 }
 
+.links-nav.con .link-nav:hover::after,
+.links-nav.con .link-nav:focus::after{
+  color: var(--first-color);
+  opacity: 0;
+  transform: scaleX(1);
+  
+}
+
+.links-nav .link-nav:hover,
+.links-nav .link-nav:focus{
+  color: var(--first-color);
+}
+
 .link-nav.current{
   position: relative;
   color: var(--first-color);
@@ -172,20 +185,6 @@ img {
 }
 
 .links-nav .link-nav::after{
-  top: 48px;
-  bottom: 0;
-  left: 0;
-  height: 4px;
-  width: 100%;
-
-  content: '';
-  display: block;
-
-  border-radius: 2px;
-  background-color: var(--first-color);
-}
-
-.links-nav .link-nav::after{
   position: absolute;
   top: 48px;
   bottom: 0;
@@ -196,6 +195,7 @@ img {
   content: '';
   display: block;
 
+  
   border-radius: 2px;
   background-color: var(--first-color);
 
