@@ -493,10 +493,15 @@ index.html - css
 }
 
 .product-actions h3{
+  font-style: normal;
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 16px;
   text-align: center;
-  padding: 27px 0;
   letter-spacing: 0.03em;
   text-transform: uppercase;
+
+  padding: 27px 0;
   color: var(--white-color);
 }
 
