@@ -306,6 +306,8 @@ a.logof{
   border: none;
   width: 44px;
   height: 44px;
+
+  transition: var(--cubic-animation-time);
   color: var(--white-color);
   background-color: rgba(255, 255, 255, 0.1);
 }
@@ -587,8 +589,10 @@ index.html - css
   border: none;
   width: 44px;
   height: 44px;
+
   color: var(--soc-ico-col);
   background-color: var(--white-color);
+  transition: var(--cubic-animation-time);
 }
 
 .social li:nth-child(n + 2){
@@ -635,10 +639,7 @@ index.html - css
   height: 90px;
   border: 1px solid #AFB1B8;
   color: var(--soc-ico-col);
-}
-
-.aclient{
-  color: var(--soc-ico-col);
+  transition: var(--cubic-animation-time);
 }
 
 .aclient:hover,.aclient:focus{
